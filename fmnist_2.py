@@ -16,7 +16,7 @@ from tensorflow.keras.datasets.fashion_mnist  import load_data
 print(X_train.shape, y_train.shape, X_test.shape, y_test.shape)
 
 indexes = np.arange(X_test.shape[0])
-for _ in range(5): indexes = np.random.permutation(indexes)  # shuffle 5 times!
+for _ in range(5): indexes = np.random.permutation(indexes)  
 X_test = X_test[indexes]
 y_test = y_test[indexes]
 
